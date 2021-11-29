@@ -1,8 +1,8 @@
 import { Fragment } from "react";
+import PropTypes from 'prop-types'
 
-const PrimeraApp = ( {saludo='Hola Mundo'} ) => {
-
-    
+const PrimeraApp = ( {saludo} ) => {
+        
     return (
         <>
             <h1>{saludo} </h1>
@@ -10,6 +10,11 @@ const PrimeraApp = ( {saludo='Hola Mundo'} ) => {
             <p>Mi primera App</p>
         </>
     );
+}
+
+// Hace que el saludo sea obligatorio.
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired
 }
 
 export default PrimeraApp;
