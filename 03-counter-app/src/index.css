@@ -6,3 +6,8 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 70px;
 }
+button{
+    font-size: 1.3rem;
+    margin-right: 10px;
+    padding: 10px;
+}
