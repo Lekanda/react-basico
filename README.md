@@ -12,7 +12,7 @@
 
 
 #### 02 Intro Java Script   
-- Metodos avanzados de JS. 
+- Repaso de JS. 
 - Metodos para hacer el codigo mas corto.
 
 #### 03 Counter App    
