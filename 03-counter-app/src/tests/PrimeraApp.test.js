@@ -25,5 +25,21 @@ describe('Test a componente PrimeraApp', () => {
     });
 
 
+    test('Debe mostrar el subtitulo enviado por Promise', () => {
+
+        const saludo = 'Hola soy goku';
+        const subTitulo = 'Soy un bicho';
+        const wrapper = shallow(
+            <PrimeraApp 
+                saludo={saludo}
+                subtitulo={subTitulo}
+            />
+        ); 
+        
+        const textParrafo = wrapper.find('p').text();
+
+        expect(textParrafo).toBe(subTitulo);
+    });
+
 
 });
