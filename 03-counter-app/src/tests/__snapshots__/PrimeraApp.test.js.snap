@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test a componente PrimeraApp Debe mostrar el <PrimeraApp /> correctamente 1`] = `
+<Fragment>
+  <h1>
+    Hola soy goku
+     
+  </h1>
+  <p>
+    Soy un bicho
+  </p>
+</Fragment>
+`;
