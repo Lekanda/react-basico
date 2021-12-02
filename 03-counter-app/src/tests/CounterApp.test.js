@@ -53,15 +53,19 @@ describe('Test a Counter App', () => {
 
     });
 
-    test('Debe de incrementar con el boton Reset', () => {
+    test('Debe con el boton Reset ponerse a 0', () => {
         
-        const btn = wrapper.find('button').at(1).simulate('click');
-        // console.log(btn.debug());
+        const wrapper = shallow(<CounterApp value={105}/>);
+
+
+        wrapper.find('button').at(0).simulate('click');
+        wrapper.find('button').at(0).simulate('click');
+        wrapper.find('button').at(1).simulate('click');
         
         const counterText = wrapper.find('h2').text().trim();
-        // console.log(counterText);
+        console.log(counterText);
 
-        expect(counterText).toBe('100');
+        expect(counterText).toBe('105');
 
     });
 
