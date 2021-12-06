@@ -28,21 +28,23 @@ export const GifGrid = ({category}) => {
     // getGifs();
 
     return (
-        <div>
-            <h3>{category}</h3>
-            <ol>
-                
-                {
-                    images.map( img => (
-                        <GifGridItem 
-                            key={img.id} 
-                            { ...img }
-                        />
-                    ))
-                }
-                
-            </ol>
-        </div>
+        <>
+            <h3 >{category}</h3>
+            <div className="card-grid contenedor">
+                <ol>
+                    
+                    {
+                        images.map( img => (
+                            <GifGridItem 
+                                key={img.id} 
+                                { ...img }
+                            />
+                        ))
+                    }
+                    
+                </ol>
+            </div>
+        </>
     )
 }
 // { ...img }: es una forma de pasar todos los atributos de un objeto a un componente. Se pasan los atributos individualmente.
