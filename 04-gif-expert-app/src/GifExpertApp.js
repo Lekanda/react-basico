@@ -7,13 +7,6 @@ export const GifExpertApp = () => {
 
     const [categories, setcategories] = useState(['One Punch']);
 
-    // const handleAdd = () => {
-    //     // categories.push('HunterXHunter');
-    //     // console.log(categories);
-    //     // setcategories([...categories, 'HunterXHunter']);
-    //     setcategories( cats => [...cats, 'HunterXHunter']);
-    // }
-    
     return (
         <>
             <h2>GifExpertApp</h2>
