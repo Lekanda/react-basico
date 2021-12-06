@@ -46,4 +46,11 @@ input{
   text-align: center;
   font-size: 35px;
   color: rgb(87, 87, 240);
+  text-transform: uppercase;
+}
+
+.loading{
+  color: red;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
