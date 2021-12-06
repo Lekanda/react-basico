@@ -22,6 +22,7 @@ input{
 .card p{
   padding: 5px;
   text-align: center;
+  font-weight: bold;
 }
 
 .card img{
@@ -29,9 +30,6 @@ input{
 }
 
 .card-grid ol{
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;

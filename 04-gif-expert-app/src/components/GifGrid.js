@@ -9,9 +9,9 @@ export const GifGrid = ({category}) => {
 
     return (
         <>
-            <h3 className="titulo-cat">{category}</h3>
+            <h3 className="titulo-cat animate__animated animate__fadeIn animate__slow">{category}</h3>
 
-            { loading && <p className="loading">Loading...</p> } 
+            { loading && <p className="loading animate__animated animate__flash animate__slow">Loading...</p> } 
             {/* //&&: Si es true hace el loading, si no nada */}
 
             <div className="card-grid contenedor">
