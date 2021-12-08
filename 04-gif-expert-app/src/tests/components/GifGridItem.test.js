@@ -8,6 +8,7 @@ import { GifGridItem } from '../../components/GifGridItem';
 describe('Pruebas en GifGridItem', () => {
     const title = 'Titulo';
     const url = 'https://localhost/img.jpg';
+   
 
     const wrapper = shallow(<GifGridItem title={title} url={url}/>);
     
