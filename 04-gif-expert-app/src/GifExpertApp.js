@@ -3,9 +3,11 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 // import ReactDOM from 'react-dom';
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({defaultCategories=[]}) => {
 
-    const [categories, setcategories] = useState(['One Punch']);
+    // const [categories, setcategories] = useState(['One Punch']);
+    const [categories, setcategories] = useState(defaultCategories);
+    
 
     return (
         <>
