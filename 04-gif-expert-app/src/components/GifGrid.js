@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useFetchGifs } from '../hooks/useFetchGifs'
 import { GifGridItem } from './GifGridItem';
 
@@ -31,3 +32,9 @@ export const GifGrid = ({category}) => {
 }
 // { ...img }: es una forma de pasar todos los atributos de un objeto a un componente. Se pasan los atributos individualmente.
 // ({id,title,url}): Asi es como se recogen los datos en el componente GifGridItem.
+
+
+GifGrid.propTypes = {
+    category: PropTypes.string.isRequired
+}
+
