@@ -40,4 +40,19 @@ describe('Probar Componente AddCategory', () => {
         wrapper.find("form").simulate("submit", { preventDefault() {} });
         expect(setcategories).not.toHaveBeenCalled();
     })
+
+    test('Debe llamar a setcategories y limpiar la caja', () => {
+        const value = "Hola mundo";
+        const input = wrapper.find("input");
+        input.simulate("change", { target: { value } });
+
+        wrapper.find("form").simulate("submit", { preventDefault() {} });
+
+        expect(setcategories).toHaveBeenCalled();
+        expect(setcategories).toHaveBeenCalledTimes(2);
+        expect(setcategories).toHaveBeenCalledWith( expect.any(Function) );
+
+        expect(wrapper.find('input').prop('value')).toBe('')
+    })
+
 });
