@@ -19,11 +19,16 @@
 - **App Counter** con react:   
     - Contador con 3 botones (+,-,reset)
 
-#### 04 
+#### 04 GifExpertApp
 
-- 
+- Buscador de Gifs desde una API.
+
+#### 05 hook-app
+
+- App **hook-app** para trabajar los hooks.
 
 
 ### Links de interes
 
 - [Eventos en React](https://es.reactjs.org/docs/events.html#mouse-events)
+- []()
