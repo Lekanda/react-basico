@@ -29,5 +29,5 @@ export const GifExpertApp = ({defaultCategories=[]}) => {
         </>
     )
 }
-
+// TODO Repetir el capitulo 6 para entender mejor la base.
 export default GifExpertApp
