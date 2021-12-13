@@ -2,3 +2,6 @@ body{
     padding: 70px;
     color: blueviolet;
 }
+.blockquote-footer {
+    margin-top: 0rem;
+}
